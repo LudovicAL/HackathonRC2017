@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:color/holo_blue_bright" />
+
+        <TextView
+            android:id="@+id/element_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/fab_margin"
+            android:layout_marginTop="@dimen/text_margin"
+            android:paddingTop="@dimen/fab_margin"
+            android:gravity="center_horizontal"
+            tools:text="Titre de element"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/text_margin"
+        android:visibility="invisible"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:gravity="top"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/previous"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            app:srcCompat="@drawable/exo_controls_previous" />
+
+        <!--<ImageButton-->
+            <!--android:id="@+id/xxs_backward"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="6dp"-->
+            <!--android:layout_marginRight="16dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:scaleX="-1"-->
+            <!--app:srcCompat="@android:drawable/ic_menu_rotate" />-->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/play"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:background="@color/colorPrimaryDark"
+                app:srcCompat="@drawable/exo_controls_play" />
+
+            <ImageButton
+                android:id="@+id/pause"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:background="@color/colorPrimaryDark"
+                app:srcCompat="@drawable/exo_controls_pause" />
+
+        </FrameLayout>
+
+        <!--<ImageButton-->
+            <!--android:id="@+id/xxs_foward"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="16dp"-->
+            <!--android:layout_marginRight="6dp"-->
+            <!--android:layout_weight="1"-->
+            <!--app:srcCompat="@android:drawable/ic_menu_rotate" />-->
+
+        <ImageButton
+            android:id="@+id/next"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="4dp"
+            app:srcCompat="@drawable/exo_controls_next" />
+
+    </LinearLayout>
+
+</LinearLayout>
