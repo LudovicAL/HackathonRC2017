@@ -2,6 +2,8 @@
 
 Ce programme a été développé dans le cadre de l'édition 2017 du Hackathon de Radio-Canada par une équipe de 5 personnes.
 
+http://hackathon.radio-canada.ca/
+
 Il s'agit d'un prototype démontrant la faisabilité d'une nouvelle fonctionnalité à ajouter à la version Android de l'application Radio-Canada Première.
 
 La fonctionnalité en question insère entre deux segments d'une liste de lecture une narration du titre du segment à venir.
